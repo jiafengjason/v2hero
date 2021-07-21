@@ -7,13 +7,12 @@ chmod +x /v2raybin/v2ray
 rm -rf v2ray.zip
 chgrp -R 0 /v2raybin
 chmod -R g+rwX /v2raybin
- 
-cd /v2raybin
 
 echo -e -n "$CONFIG_JSON1" > config.json
 echo -e -n "$PORT" >> config.json
 echo -e -n "$CONFIG_JSON2" >> config.json
 echo -e -n "$UUID" >> config.json
 echo -e -n "$CONFIG_JSON3" >> config.json
+cat config.json
 
 ./v2ray
